@@ -32,6 +32,7 @@
     --color-primary: #4dff9d;
     --color-primary-variant: rgba(77, 234, 255, 0.4);
     --color-white: #fff;
+    --color-cyan: #00ffd5;
     --color-light: rgba(255, 255, 255, 0.6);
 
     --transition: all 400ms ease;
@@ -54,7 +55,6 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg_texture.png);
 }
 
 /* ===================== GENERAL STYLES ===================== */
@@ -102,7 +102,11 @@ a {
 }
 
 a:hover {
-  color: var(--color-white);
+  color: var(--color-bg);
+}
+
+a.active {
+  color: black;
 }
 
 .btn {
@@ -117,7 +121,7 @@ a:hover {
 }
 
 .btn:hover {
-  background: var(--color-white);
+  background: var(--color-cyan);
   color: var(--color-bg);
   border-color: transparent;
 }

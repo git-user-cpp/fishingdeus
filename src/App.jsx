@@ -1,5 +1,9 @@
 import React from "react"
 import { Navbar } from './components'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/home/Home.jsx'
+import Blog from './pages/blog/Blog.jsx'
+import Register from "./pages/register/Register.jsx"
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -21,6 +25,13 @@ function App() {
   return (
     <div className="App">
       <Navbar />
+      <div className="container">
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/register" element={<Register />} />
+        </Routes>
+      </div>
     </div>
   )
 }
