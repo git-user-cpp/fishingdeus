@@ -1,6 +1,7 @@
 import React from 'react'
 import './Navbar.css'
 import { Link, useLocation } from 'react-router-dom'
+import { useRef, useState, useEffect } from 'react';
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -20,23 +21,55 @@ import { Link, useLocation } from 'react-router-dom'
 
 const Navbar = () => {
   const location = useLocation();
+  const prevScrollPosRef = useRef(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  const handleScroll = () => {
+    const currentScrollPos = window.scrollY;
+    const isVisible = prevScrollPosRef.current > currentScrollPos;
+
+    prevScrollPosRef.current = currentScrollPos;
+    setIsVisible(isVisible);
+  };  
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <nav className='navbar'>
+    <nav className={`navbar ${isVisible ? 'navbar-show' : 'navbar-hide'}`}>
       <Link to="/home" className='site-title'>
         FishingDeus
       </Link>
       <ul className='menu'>
-        <li className={`btn ${location.pathname === '/blog' ? 'active' : ''}`}>
-          <Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>
+        <Link to="/fishingpedia" className={location.pathname === '/fishingpedia' ? 'active' : ''}>
+          <li className={`btn ${location.pathname === '/fishingpedia' ? 'active' : ''}`}>
+            FishingPedia
+          </li>
+        </Link>
+        <Link to="/map" className={location.pathname === '/map' ? 'active' : ''}>
+          <li className={`btn ${location.pathname === '/map' ? 'active' : ''}`}>
+            Map
+          </li>
+        </Link>
+        <Link to="/news" className={location.pathname === '/news' ? 'active' : ''}>
+          <li className={`btn ${location.pathname === '/news' ? 'active' : ''}`}>
+            News
+          </li>
+        </Link>
+        <Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>
+          <li className={`btn ${location.pathname === '/blog' ? 'active' : ''}`}>
             Blog
-          </Link>
-        </li>
-        <li className={`btn ${location.pathname === '/register' ? 'active' : ''}`}>
-          <Link to="/register" className={location.pathname === '/register' ? 'active' : ''}>
+          </li>
+        </Link>
+        <Link to="/register" className={location.pathname === '/register' ? 'active' : ''}>
+          <li className={`btn ${location.pathname === '/register' ? 'active' : ''}`}>
             Register
-          </Link>
-        </li>
+          </li>
+        </Link>
       </ul>
     </nav>
   )

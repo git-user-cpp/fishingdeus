@@ -1,4 +1,7 @@
 import Home from './home/Home.jsx'
+import Fishingpedia from './fishingpedia/Fishingpedia.jsx'
+import Map from './map/Map.jsx'
+import News from './news/News.jsx'
 import Blog from './blog/Blog.jsx'
 import Register from './register/Register.jsx'
 
@@ -20,6 +23,9 @@ import Register from './register/Register.jsx'
 
 export {
     Home,
+    Fishingpedia,
+    Map,
+    News,
     Blog,
     Register,
 }

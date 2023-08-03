@@ -1,9 +1,7 @@
 import React from "react"
-import { Navbar } from './components'
 import { Route, Routes } from 'react-router-dom'
-import Home from './pages/home/Home.jsx'
-import Blog from './pages/blog/Blog.jsx'
-import Register from "./pages/register/Register.jsx"
+import { Navbar, Header, Footer } from './components'
+import { Home, Fishingpedia, Map, News, Blog, Register } from './pages'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -28,10 +26,14 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/home" element={<Home />} />
+          <Route path="/fishingpedia" element={<Fishingpedia />} />
+          <Route path="/map" element={<Map />} />
+          <Route path="/news" element={<News />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/register" element={<Register />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   )
 }

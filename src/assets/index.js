@@ -1,3 +1,8 @@
+import header_image from './header_poster.png'
+import Swipe_photo1 from './photo1.jpg'
+import Swipe_photo2 from './photo2.jpg'
+import Swipe_photo3 from './photo3.jpg'
+
 /*
   Copyright 2023 Andrew Kushyk
 
@@ -14,17 +19,9 @@
   limitations under the License.
 */
 
-/* .container.home-container {
-  background: red;
-} */
-
-.photo > img{
-  width: 75%;
-  margin: auto;
-  margin-bottom: 4rem;
-  border-radius: 2rem;
-}
-
-.swiper-pagination-clickable .swiper-pagination-bullet {
-  background: var(--color-primary);
+export {
+  header_image,
+  Swipe_photo1,
+  Swipe_photo2,
+  Swipe_photo3
 }

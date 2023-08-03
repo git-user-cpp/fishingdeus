@@ -1,4 +1,6 @@
 import React from 'react'
+import { header_image } from '../../assets'
+import './Header.css'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -18,7 +20,19 @@ import React from 'react'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <header>
+      <div className="header-container">
+        <div className="header-poster">
+          <img src={header_image} alt="poster" />
+        </div>
+        <div className="header-info">
+          <p className='text-gradient'>
+            This site was created as an open source project. <br /> We can only maintain it thanks to your donations.
+          </p>
+          <a href="https://opencollective.com/git-user-cpp" className='btn btn-primary'>Support The Project</a>
+        </div>
+      </div>
+    </header>
   )
 }
 

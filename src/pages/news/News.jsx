@@ -1,3 +1,5 @@
+import React from 'react'
+
 /*
   Copyright 2023 Andrew Kushyk
 
@@ -14,17 +16,10 @@
   limitations under the License.
 */
 
-/* .container.home-container {
-  background: red;
-} */
-
-.photo > img{
-  width: 75%;
-  margin: auto;
-  margin-bottom: 4rem;
-  border-radius: 2rem;
+const News = () => {
+  return (
+    <div>News</div>
+  )
 }
 
-.swiper-pagination-clickable .swiper-pagination-bullet {
-  background: var(--color-primary);
-}
+export default News

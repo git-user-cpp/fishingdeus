@@ -1,4 +1,11 @@
 import React from 'react'
+import { Header } from '../../components/'
+import './Home.css'
+import {Pagination} from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import 'swiper/css/pagination'
+import { data } from '../../data'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -18,7 +25,26 @@ import React from 'react'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className='container home-container'>
+      <Header />
+      <Swiper className="container swipe_container"
+      modules={[Pagination]}
+      spaceBetween={40}
+      slidesPerView={1}
+      pagination={{ clickable: true }}>
+        {
+          data.map(({photo}, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <div className="photo">
+                  <img src={photo} alt="" />
+                </div>
+              </SwiperSlide>
+            )
+          })
+        }
+      </Swiper>
+    </div>
   )
 }
 

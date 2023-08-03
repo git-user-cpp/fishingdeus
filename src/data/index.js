@@ -1,3 +1,5 @@
+import { Swipe_photo1, Swipe_photo2, Swipe_photo3 } from '../assets'
+
 /*
   Copyright 2023 Andrew Kushyk
 
@@ -14,17 +16,14 @@
   limitations under the License.
 */
 
-/* .container.home-container {
-  background: red;
-} */
-
-.photo > img{
-  width: 75%;
-  margin: auto;
-  margin-bottom: 4rem;
-  border-radius: 2rem;
-}
-
-.swiper-pagination-clickable .swiper-pagination-bullet {
-  background: var(--color-primary);
-}
+export const data = [
+    {
+        photo: Swipe_photo1,
+    },
+    {
+        photo: Swipe_photo2,
+    },
+    {
+        photo: Swipe_photo3,
+    }
+];

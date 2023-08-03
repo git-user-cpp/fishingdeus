@@ -37,9 +37,25 @@
 
     --transition: all 400ms ease;
 
-    --container-width-lg: 75%;
+    --container-width-lg: 90%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
+}
+
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #fadede 0.89%,
+    #f5bebe 17.23%,
+    #ffa1a1 42.04%,
+    #ffa277 55.12%,
+    #ff7f44 71.54%,
+    #ffe600 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 
 html {
@@ -129,6 +145,12 @@ a.active {
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-bg);
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
 }
 
 img {
