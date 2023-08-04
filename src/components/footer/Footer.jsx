@@ -1,4 +1,10 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import './Footer.css'
+import { AiOutlineCopyright } from 'react-icons/ai'
+import { TbMailForward } from 'react-icons/tb'
+import { VscGithubInverted } from 'react-icons/vsc'
+import { PiInstagramLogoFill } from 'react-icons/pi'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -19,7 +25,21 @@ import React from 'react'
 const Footer = () => {
   return (
     <footer>
-      Footer
+      <a href="/" className='footer_logo'>FishingDeus</a>
+      <ul className='permalinks'>
+        <li><Link to='/fishingpedia'>FishingPedia</Link></li>
+        <li><Link to='/map'>Map</Link></li>
+        <li><Link to='/news'>News</Link></li>
+        <li><Link to='/blog'>Blog</Link></li>
+      </ul>
+      <div className="footer_socials">
+        <a href="mailto:akushyk799@gmail.com"><TbMailForward/></a>
+        <a href="https://github.com/git-user-cpp/fishingdeus"><VscGithubInverted/></a>
+        <a href="https://instagram.com/"><PiInstagramLogoFill/></a>
+      </div>
+      <div className="footer_copyright">
+        <small><AiOutlineCopyright className='copyright_label'/> FishingDeus. All rights reserved.</small>
+      </div>
     </footer>
   )
 }

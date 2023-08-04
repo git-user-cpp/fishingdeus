@@ -13,3 +13,72 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
+
+footer {
+  background: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_logo {
+  font-weight: bold;
+  font-size: 2.5rem;
+  padding: 0.5rem;
+}
+
+.permalinks {
+  display: flex;
+  gap: 1rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.permalinks:hover {
+  color: var(--color-white);
+}
+
+.footer_socials {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.footer_socials a {
+  background: var(--color-primary);
+  color: black;
+  padding: 0.8rem;
+  border-radius: 0.7rem;
+  display: flex;
+  border: 1px solid transparent;
+}
+
+.footer_socials a:hover {
+  background: transparent;
+  color: var(--color-white);
+  border-color: var(--color-white);
+}
+
+.footer_copyright {
+  color: var(--color-primary);
+}
+
+/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+@media screen and (max-width: 1024px) {
+  .footer_logo {
+    padding: 0rem;
+  }
+  .footer_socials {
+    margin: 0.3rem;
+  }
+}
+
+/* ===================== SMALL QUERIES (SMALL DEVICES) ===================== */
+@media screen and (max-width: 600px) {
+  .footer_logo {
+    padding: 0rem;
+  }
+  .footer_socials {
+    margin: 0rem;
+  }
+}

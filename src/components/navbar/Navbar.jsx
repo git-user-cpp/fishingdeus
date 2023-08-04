@@ -40,32 +40,64 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className={`navbar ${isVisible ? 'navbar-show' : 'navbar-hide'}`}>
-      <Link to="/home" className='site-title'>
+    <nav className={`navbar ${isVisible ? 'navbar_show' : 'navbar_hide'}`}>
+
+      <Link to="/" className='site_title'>
         FishingDeus
       </Link>
+
+      {/* Mobile Menu */}
+      <ul className="menu_mobile">
+        <Link to="/fishingpedia">
+          <li className={`${location.pathname === '/fishingpedia' ? 'active' : ''}`}>
+            FishingPedia
+          </li>
+        </Link>
+        <Link to="/map">
+          <li className={`${location.pathname === '/map' ? 'active' : ''}`}>
+            Map
+          </li>
+        </Link>
+        <Link to="/news">
+          <li className={`${location.pathname === '/news' ? 'active' : ''}`}>
+            News
+          </li>
+        </Link>
+        <Link to="/blog">
+          <li className={`${location.pathname === '/blog' ? 'active' : ''}`}>
+            Blog
+          </li>
+        </Link>
+        <Link to="/register">
+          <li className={`${location.pathname === '/register' ? 'active' : ''}`}>
+            Register
+          </li>
+        </Link>
+      </ul>
+
+      {/* Regular menu */}
       <ul className='menu'>
-        <Link to="/fishingpedia" className={location.pathname === '/fishingpedia' ? 'active' : ''}>
+        <Link to="/fishingpedia">
           <li className={`btn ${location.pathname === '/fishingpedia' ? 'active' : ''}`}>
             FishingPedia
           </li>
         </Link>
-        <Link to="/map" className={location.pathname === '/map' ? 'active' : ''}>
+        <Link to="/map">
           <li className={`btn ${location.pathname === '/map' ? 'active' : ''}`}>
             Map
           </li>
         </Link>
-        <Link to="/news" className={location.pathname === '/news' ? 'active' : ''}>
+        <Link to="/news">
           <li className={`btn ${location.pathname === '/news' ? 'active' : ''}`}>
             News
           </li>
         </Link>
-        <Link to="/blog" className={location.pathname === '/blog' ? 'active' : ''}>
+        <Link to="/blog">
           <li className={`btn ${location.pathname === '/blog' ? 'active' : ''}`}>
             Blog
           </li>
         </Link>
-        <Link to="/register" className={location.pathname === '/register' ? 'active' : ''}>
+        <Link to="/register">
           <li className={`btn ${location.pathname === '/register' ? 'active' : ''}`}>
             Register
           </li>

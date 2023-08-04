@@ -1,6 +1,6 @@
 import React from "react"
 import { Route, Routes } from 'react-router-dom'
-import { Navbar, Header, Footer } from './components'
+import { Navbar, Footer } from './components'
 import { Home, Fishingpedia, Map, News, Blog, Register } from './pages'
 
 /*
@@ -25,7 +25,7 @@ function App() {
       <Navbar />
       <div className="container">
         <Routes>
-          <Route path="/home" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/fishingpedia" element={<Fishingpedia />} />
           <Route path="/map" element={<Map />} />
           <Route path="/news" element={<News />} />

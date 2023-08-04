@@ -52,6 +52,18 @@ const Home = () => {
           })
         }
       </Swiper>
+      <article>
+        FishingPedia
+      </article>
+      <article>
+        Map
+      </article>
+      <article>
+        News
+      </article>
+      <article>
+        Blog
+      </article>
     </div>
   )
 }

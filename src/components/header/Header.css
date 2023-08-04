@@ -37,3 +37,39 @@ header {
   align-items: center;
   text-shadow: 1px black;
 }
+
+/* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
+@media screen and (max-width: 1024px) {
+  .header-container {
+    gap: 0.2rem;
+    height: 5rem;
+  }
+
+  .header-info {
+    font-size: 0.6rem;
+  }
+}
+
+/* ===================== SMALL QUERIES (SMALL DEVICES) ===================== */
+@media screen and (max-width: 600px) {
+  header {
+    padding-top: 5rem;
+  }
+
+  .header-container {
+    height: 2.8rem;
+  }
+
+  .header-info .text-gradient {
+    display: none;
+  }
+
+  .header-info {
+    display: flex;
+  }
+
+  .btn.btn-primary {
+    scale: 0.8;
+    font-size: 0.6rem;
+  }
+}
