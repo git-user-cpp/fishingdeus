@@ -1,10 +1,16 @@
 import React from 'react'
 import { Header } from '../../components/'
 import './Home.css'
-import {Pagination} from 'swiper/modules'
+
+/* Swiper */
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css'
-import 'swiper/css/pagination'
+import 'swiper/css/bundle'
+import 'swiper/css/navigation'
+import { EffectCube } from 'swiper/modules';
+import { Autoplay } from 'swiper/modules';
+import 'swiper/css/autoplay'
+
+/* Data */
 import { data } from '../../data'
 
 /*
@@ -27,11 +33,14 @@ const Home = () => {
   return (
     <div className='container home-container'>
       <Header />
-      <Swiper className="container swipe_container"
-      modules={[Pagination]}
-      spaceBetween={40}
-      slidesPerView={1}
-      pagination={{ clickable: true }}>
+      <Swiper modules={[EffectCube, Autoplay]} effect="cube" cubeEffect={{slideShadows: false,}} className="container swipe_container"
+        spaceBetween={40}
+        slidesPerView={1}
+        grabCursor={true}
+        autoplay={{delay: 5000, disableOnInteraction: false}}
+        centeredSlides={true}
+        loop={true}
+      >
         {
           data.map(({photo}, index) => {
             return (
