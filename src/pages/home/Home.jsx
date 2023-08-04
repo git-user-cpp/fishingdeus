@@ -30,40 +30,50 @@ import { data } from '../../data'
 
 const Home = () => {
   return (
-    <div className='container home-container'>
+    <div className='container home_container'>
       <Header />
-      <Swiper modules={[EffectCube, Autoplay]} effect="cube" cubeEffect={{slideShadows: false,}} className="container swipe_container"
-        spaceBetween={40}
-        slidesPerView={1}
-        grabCursor={true}
-        autoplay={{delay: 5000, disableOnInteraction: false}}
-        centeredSlides={true}
-        loop={true}
-      >
-        {
-          data.map(({photo}, index) => {
-            return (
-              <SwiperSlide key={index}>
-                <div className="photo">
-                  <img src={photo} alt="" />
-                </div>
-              </SwiperSlide>
-            )
-          })
-        }
-      </Swiper>
-      <article>
-        FishingPedia
-      </article>
-      <article>
-        Map
-      </article>
-      <article>
-        News
-      </article>
-      <article>
-        Blog
-      </article>
+      <section className='swiper_section'>
+        <Swiper modules={[EffectCube, Autoplay]} effect="cube" cubeEffect={{slideShadows: false,}} className="container swipe_container"
+          spaceBetween={40}
+          slidesPerView={1}
+          grabCursor={true}
+          autoplay={{delay: 5000, disableOnInteraction: false}}
+          centeredSlides={true}
+          loop={true}
+        >
+          {
+            data.map(({photo}, index) => {
+              return (
+                <SwiperSlide key={index}>
+                  <div className="photo">
+                    <img src={photo} alt="" />
+                  </div>
+                </SwiperSlide>
+              )
+            })
+          }
+        </Swiper>
+      </section>
+      <section className='article_section'>
+        <article>
+          FishingPedia
+        </article>
+      </section>
+      <section className='article_section'>
+        <article>
+          Map
+        </article>
+      </section>
+      <section className='article_section'>
+        <article>
+          News
+        </article>
+      </section>
+      <section className='article_section'>
+        <article>
+          Blog
+        </article>
+      </section>
     </div>
   )
 }
