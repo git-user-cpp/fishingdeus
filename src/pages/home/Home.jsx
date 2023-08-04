@@ -4,10 +4,9 @@ import './Home.css'
 
 /* Swiper */
 import { Swiper, SwiperSlide } from 'swiper/react'
-import 'swiper/css/bundle'
-import 'swiper/css/navigation'
 import { EffectCube } from 'swiper/modules';
 import { Autoplay } from 'swiper/modules';
+import 'swiper/css/bundle'
 import 'swiper/css/autoplay'
 
 /* Data */
