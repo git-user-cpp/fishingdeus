@@ -10,7 +10,7 @@ import 'swiper/css/bundle'
 import 'swiper/css/autoplay'
 
 /* Data */
-import { data } from '../../data'
+import { swiper_photos, home_articles } from '../../data'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -42,7 +42,7 @@ const Home = () => {
           loop={true}
         >
           {
-            data.map(({photo}, index) => {
+            swiper_photos.map(({photo}, index) => {
               return (
                 <SwiperSlide key={index}>
                   <div className="photo">
@@ -54,25 +54,26 @@ const Home = () => {
           }
         </Swiper>
       </section>
-      <section className='article_section'>
-        <article>
-          FishingPedia
-        </article>
-      </section>
-      <section className='article_section'>
-        <article>
-          Map
-        </article>
-      </section>
-      <section className='article_section'>
-        <article>
-          News
-        </article>
-      </section>
-      <section className='article_section'>
-        <article>
-          Blog
-        </article>
+      <section className='articles'>
+        {
+          home_articles.map(({photo, header, text}, index) => {
+            return (
+              <section className='article_section' key={index}>
+                <h1>{header}</h1>
+                <article className='article'>
+                  <div className="photo">
+                    <img src={photo} alt="" />
+                  </div>
+                  <div className="article_text">
+                    <p>
+                      {text}
+                    </p>
+                  </div>
+                </article>
+              </section>
+            )
+          })
+        }
       </section>
     </div>
   )

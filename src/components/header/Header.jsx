@@ -21,11 +21,11 @@ import './Header.css'
 const Header = () => {
   return (
     <header>
-      <div className="header-container">
-        <div className="header-poster">
+      <div className="header_container">
+        <div className="header_poster">
           <img src={header_image} alt="poster" />
         </div>
-        <div className="header-info">
+        <div className="header_info">
           <p className='text-gradient'>
             This site was created as an open source project. <br /> We can only maintain it thanks to your donations.
           </p>

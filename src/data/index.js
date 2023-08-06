@@ -16,7 +16,7 @@ import { Swipe_photo1, Swipe_photo2, Swipe_photo3 } from '../assets'
   limitations under the License.
 */
 
-export const data = [
+export const swiper_photos = [
     {
         photo: Swipe_photo1,
     },
@@ -26,4 +26,27 @@ export const data = [
     {
         photo: Swipe_photo3,
     }
+];
+
+export const home_articles = [
+  {
+    photo: Swipe_photo1,
+    header: 'FishingPedia',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
+  },
+  {
+    photo: Swipe_photo2,
+    header: 'Map',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
+  },
+  {
+    photo: Swipe_photo3,
+    header: 'News',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
+  },
+  {
+    photo: Swipe_photo2,
+    header: 'Blog',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
+  }
 ];
