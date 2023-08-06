@@ -65,9 +65,14 @@ footer {
 
 /* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
 @media screen and (max-width: 1024px) {
+  footer {
+    margin-top: 2rem;
+  }
+
   .footer_logo {
     padding: 0rem;
   }
+
   .footer_socials {
     margin: 0.3rem;
   }
@@ -78,6 +83,7 @@ footer {
   .footer_logo {
     padding: 0rem;
   }
+
   .footer_socials {
     margin: 0rem;
   }

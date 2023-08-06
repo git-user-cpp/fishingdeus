@@ -57,14 +57,52 @@
 
 /* ===================== MEDIA QUERIES (MEDIUM DEVICES) ===================== */
 @media screen and (max-width: 1024px) {
+  .swiper_section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container .swiper_container {
+    width: 100%;
+  }
+
   .photo > img{
     width: 100%;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article_text {
+    font-size: 1.5rem;
   }
 }
 
 /* ===================== SMALL QUERIES (SMALL DEVICES) ===================== */
 @media screen and (max-width: 600px) {
+  .swiper_section {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container .swiper_container {
+    width: 100%;
+  }
+
   .photo > img{
     width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .article_text {
+    font-size: 1rem;
   }
 }
