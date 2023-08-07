@@ -1,4 +1,5 @@
 import React from 'react'
+import './Fishingpedia.css'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -18,7 +19,14 @@ import React from 'react'
 
 const Fishingpedia = () => {
   return (
-    <div>Fishingpedia</div>
+    <div className="container fishingpedia_container">
+      <section className='fishingpedia_search'>
+        Search
+      </section>
+      <section className='fishingpedia_pages'>
+        Fishingpedia pages
+      </section>
+    </div>
   )
 }
 

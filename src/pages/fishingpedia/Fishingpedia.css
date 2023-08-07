@@ -13,3 +13,9 @@
   See the License for the specific language governing permissions and
   limitations under the License.
 */
+
+.container.fishingpedia_container {
+  margin: 0rem;
+  padding-top: 10rem;
+  width: 100%;
+}
