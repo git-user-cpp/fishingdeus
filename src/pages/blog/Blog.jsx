@@ -1,4 +1,5 @@
 import React from 'react'
+import './Blog.css'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -18,7 +19,9 @@ import React from 'react'
 
 const Blog = () => {
   return (
-    <div>Blog</div>
+    <div className="container blog_container">
+      Blog
+    </div>
   )
 }
 

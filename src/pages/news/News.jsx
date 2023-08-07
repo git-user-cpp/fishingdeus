@@ -1,4 +1,5 @@
 import React from 'react'
+import './News.css'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -18,7 +19,9 @@ import React from 'react'
 
 const News = () => {
   return (
-    <div>News</div>
+    <div className="container news_container">
+      News
+    </div>
   )
 }
 
