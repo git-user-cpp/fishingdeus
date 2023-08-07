@@ -50,3 +50,26 @@ export const home_articles = [
     text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
   }
 ];
+
+export const fishingpedia_articles = [
+  {
+    photo: Swipe_photo1,
+    header: 'Name',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
+  },
+  {
+    photo: Swipe_photo2,
+    header: 'Name',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
+  },
+  {
+    photo: Swipe_photo3,
+    header: 'Name',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
+  },
+  {
+    photo: Swipe_photo2,
+    header: 'Name',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ducimus, sapiente vel quos fugit accusantium veniam ipsum, similique autem unde corrupti. Necessitatibus iure rerum totam sit ea dignissimos ducimus aliquam veniam vel quae natus voluptatum commodi magnam, quam excepturi nemo voluptatibus vero voluptate cum omnis id maiores repudiandae. Excepturi, natus.',
+  }
+];

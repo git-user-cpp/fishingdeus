@@ -1,4 +1,5 @@
 import React from 'react'
+import './Register.css'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -18,7 +19,9 @@ import React from 'react'
 
 const Register = () => {
   return (
-    <div>Register</div>
+    <div className="container register_container">
+      Register
+    </div>
   )
 }
 

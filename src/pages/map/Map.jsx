@@ -1,4 +1,5 @@
 import React from 'react'
+import './Map.css'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -18,7 +19,9 @@ import React from 'react'
 
 const Map = () => {
   return (
-    <div>Map</div>
+    <div className="container map_container">
+      Map
+    </div>
   )
 }
 

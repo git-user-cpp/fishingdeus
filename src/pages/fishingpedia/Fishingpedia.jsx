@@ -1,5 +1,6 @@
 import React from 'react'
 import './Fishingpedia.css'
+import { fishingpedia_articles } from '../../data'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -24,7 +25,27 @@ const Fishingpedia = () => {
         Search
       </section>
       <section className='fishingpedia_pages'>
-        Fishingpedia pages
+        <article className='fishingpedia_page'>
+          {
+            fishingpedia_articles.map(({photo, header, text}, index) => {
+              return (
+                <section className='article_section' key={index}>
+                  <h1>{header}</h1>
+                  <article className='article'>
+                    <div className="photo">
+                      <img src={photo} alt="" />
+                    </div>
+                    <div className="article_text">
+                      <p>
+                        {text}
+                      </p>
+                    </div>
+                  </article>
+                </section>
+              )
+            })
+          }
+        </article>
       </section>
     </div>
   )
