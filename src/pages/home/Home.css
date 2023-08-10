@@ -80,6 +80,10 @@
     width: 100%;
   }
 
+  .articles {
+    margin: 0;
+  }
+
   .article {
     display: flex;
     flex-direction: column;
@@ -104,6 +108,10 @@
   .photo > img{
     width: 100%;
     padding: 0;
+    margin: 0;
+  }
+
+  .articles {
     margin: 0;
   }
 
