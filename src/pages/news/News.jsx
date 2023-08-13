@@ -1,5 +1,6 @@
 import React from 'react'
 import './News.css'
+import { news_articles } from '../../data'
 
 /*
   Copyright 2023 Andrew Kushyk
@@ -20,7 +21,25 @@ import './News.css'
 const News = () => {
   return (
     <div className="container news_container">
-      News
+      {
+        news_articles.map(({photo, header, text}, index) => {
+          return (
+            <section className='news_section' key={index}>
+              <h1>{header}</h1>
+              <article className='news'>
+                <div className="photo">
+                  <img src={photo} alt="" />
+                </div>
+                <div className="news_text">
+                  <p>
+                    {text}
+                  </p>
+                </div>
+              </article>
+            </section>
+          )
+        })
+      }
     </div>
   )
 }
